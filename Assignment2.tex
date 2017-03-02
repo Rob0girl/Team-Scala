@@ -1,7 +1,7 @@
 \documentclass[runningheads,a4paper]{article}
 
 \usepackage[utf8]{inputenc}
- 
+
 \setcounter{tocdepth}{3}
 
 \usepackage[english]{babel} 
@@ -10,17 +10,17 @@
 \usepackage{float}
 \usepackage{multicol}
 \usepackage{url}
- 
+
 \usepackage{titling}
 \usepackage[hidelinks]{hyperref}
-\setcounter{secnumdepth}{5}
+
 %Margins
 \usepackage[
 margin=2cm,
 includefoot
 ]{geometry}
 
- 
+
 
 %Headers and Footers
 \usepackage{fancyhdr}
@@ -30,9 +30,9 @@ includefoot
 \fancyfoot[R]{\thepage}
 \renewcommand{\headrulewidth}{0pt}
 \renewcommand{\footrulewidth}{0pt}
- \setlength\parindent{24pt}
+\setlength\parindent{24pt}
 \begin{document}
-
+	
 	%Title Page
 	\begin{titlepage}
 		\begin{center}
@@ -43,7 +43,7 @@ includefoot
 			\textsc{\Large
 				NavUP\\
 				Architectural Requirements Specifications and Design \\
-			\hfill \break 10 March 2017
+				\hfill \break 10 March 2017
 				%University of Pretoria
 			}\\
 			[0.1cm]
@@ -70,8 +70,8 @@ includefoot
 				}
 				
 				\textsc{\large\\
-			        Gershom Maluleke \\
-				 	13229908\\ 
+					Gershom Maluleke \\
+					13229908\\ 
 				}
 				
 				\textsc{\large\\
@@ -82,7 +82,7 @@ includefoot
 				\columnbreak
 				
 				\textsc{\large\\
-					 Avinash Singh\\
+					Avinash Singh\\
 					14043778\\
 				}
 				
@@ -104,19 +104,19 @@ includefoot
 			
 		\end{center}
 	\end{titlepage}
-%\maketitle
-
-\begingroup
-
-\tableofcontents
-\addcontentsline{toc}{section}{Table Of Contents}
-\endgroup
-\newpage
-
-
-%\include(user/user.tex)
-%\include(gis/gis.tex)
-%\include(event/event.tex)
-%\include(notification/notification.tex)
-
+	%\maketitle
+	
+	\begingroup
+	
+	\tableofcontents
+	\addcontentsline{toc}{section}{Table Of Contents}
+	\endgroup
+	\newpage
+	
+	
+	%\input{user/user.tex}
+	%\input{gis/gis.tex}
+	%\input{event/event.tex}
+	%\input{notification/notification.tex}
+	
 \end{document}
