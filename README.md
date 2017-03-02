@@ -1,3 +1,6 @@
+[![Stories in Ready](https://badge.waffle.io/Rob0girl/Team-Scala.png?label=ready&title=Ready)](https://waffle.io/Rob0girl/Team-Scala) 
+[![Stories in Progress](https://badge.waffle.io/Rob0girl/Team-Scala.png?label=In%20Progress&title=In%20Progress)](https://waffle.io/Rob0girl/Team-Scala)
+
 # Software Engineering :hotsprings:
 ## Team Scala :red_circle:
 ### NavUP System :calling: :watch: :computer:
