@@ -1,0 +1,33 @@
+\section{Notification Module}
+\subsection{External Interface Requirements}
+
+\subsubsection{System Interfaces}
+\begin{itemize}
+	\item The notification module will interface with any subsystem or module that wishes to send out notifications to users. The subsystem requesting for users to be notified is modelled as the Notifying Module. The Notifying Moudle will interface with the Notification Module through the setState() function to send a notification request. 
+	
+	\item The notification module will interface with the User module in order to sufficiently dispatch notifications. Each instance of the Notifier class will maintain a list of attached users and will send notifications through the notify() function.
+\end{itemize}
+
+\subsubsection{User Interfaces}
+\begin{itemize}
+	\item The system will dispatch notifications in the form of an \textbf{SMS} to the appropriate users. The SMS will contain the content of the notification and the interface will depend on the user's device.
+	
+	\item The system will dispatch notifications in the form of an \textbf{email} to the appropriate users. The email will have an appropriate subject and will contain the content of the notification. The interface will depend on the mail application used by the user.
+	
+	\item The system will dispatch notifications in the form of \textbf{Push Notifications}.  push notification will contain a title, content as well as a timestamp. The interface will depend on the user's operating system. 
+\end{itemize}
+
+\subsubsection{Hardware Interfaces}
+The Notification Module does not have any explicit hardware interfaces
+
+\subsubsection{Software Interfaces}
+  \begin{itemize}
+  	\item The notification module will communicate with the database in order to get the details of users to be notified.
+  \end{itemize}
+  
+\subsubsection{Communication Interfaces}
+	\begin{itemize}
+		\item The notification module will need to communicate with an Email API when sending out emails to users
+		\item The notification module needs to interface with the SMS Manager API to send SMS's to users.
+		\item The notification module will interact with the Operating system push notification service (OSPNS) to allow users to receive push notifications.
+	\end{itemize}
