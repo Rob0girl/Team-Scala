@@ -1,6 +1,6 @@
 \section{Notification Module}
 \subsection{External Interface Requirements}
-
+This section gives a detailed description of the system interfaces, hardware interfaces, software interfaces as well as communication interfaces.
 \subsubsection{System Interfaces}
 \begin{itemize}
 	\item The notification module will interface with any subsystem or module that wishes to send out notifications to users. The subsystem requesting for users to be notified is modelled as the Notifying Module. The Notifying Moudle will interface with the Notification Module through the setState() function to send a notification request. 
@@ -31,3 +31,7 @@ The Notification Module does not have any explicit hardware interfaces
 		\item The notification module needs to interface with the SMS Manager API to send SMS's to users.
 		\item The notification module will interact with the Operating system push notification service (OSPNS) to allow users to receive push notifications.
 	\end{itemize}
+	
+\subsection{Performance Requirements}
+\subsection{Design Constraints}
+\subsection{Software System Attributes}
