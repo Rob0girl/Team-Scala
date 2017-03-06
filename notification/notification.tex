@@ -3,7 +3,7 @@
 This section gives a detailed description of the system interfaces, hardware interfaces, software interfaces as well as communication interfaces.
 \subsubsection{System Interfaces}
 \begin{itemize}
-	\item The notification module will interface with any subsystem or module that wishes to send out notifications to users. The subsystem requesting for users to be notified is modelled as the Notifying Module. The Notifying Moudle will interface with the Notification Module through the setState() function to send a notification request. 
+	\item The notification module will interface with any subsystem or module that wishes to send out notifications to users. The subsystem requesting for users to be notified is modelled as the Notifying Module. The Notifying module will interface with the Notification Module through the setState() function to send a notification request. 
 	
 	\item The notification module will interface with the User module in order to sufficiently dispatch notifications. Each instance of the Notifier class will maintain a list of attached users and will send notifications through the notify() function.
 \end{itemize}
@@ -33,5 +33,11 @@ The Notification Module does not have any explicit hardware interfaces
 	\end{itemize}
 	
 \subsection{Performance Requirements}
+Notifications should be able to perform and guarantee message delivery under high volumes, allow real time notifications to be received and have good network access for this purpose. 
+
 \subsection{Design Constraints}
+
+
+
 \subsection{Software System Attributes}
+
