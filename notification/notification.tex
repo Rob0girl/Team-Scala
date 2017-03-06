@@ -1,4 +1,6 @@
 \section{Notification Module}
+\subsection{Overview}
+The notifications module provides notifications to system users regarding particular system updates that a user would like to be notified about through some medium external to the application. 
 \subsection{External Interface Requirements}
 This section gives a detailed description of the system interfaces, hardware interfaces, software interfaces as well as communication interfaces.
 \subsubsection{System Interfaces}
@@ -57,37 +59,42 @@ The sending of the notifications must be secure using proper SMTP setup with SSL
 All notifications that have been sent by any means, by email, SMS, or even push notifications should be logged on the back-end server.
 
 
-\section{UML}
-\subsection{Class Diagram}
-
+\subsection{Design}
+The Notification Subsystem is designed using 2 design patterns:
+\begin{enumerate}
+	\item \textbf{Strategy - } This pattern encapsulates the send() function within the Notification class, making it interchangeable. This allows the send() function to vary based on whether the notification is an email notification, SMS notification or a push notification.	
+	\item \textbf{Observer - } This pattern defines a one-to-many relationship between the Notifier and User classes so that when the Notifier's state changes, all users are notified automatically.
+\end{enumerate}
+\subsubsection{Class Diagram}
+This diagram models the structural elements, their composition and classification.
 
 \begin{figure}[H]
 	\centering
-	\includegraphics[width=0.7\textwidth]{notification/img/ClassDiagram.png}
+	\includegraphics[scale=0.4]{notification/img/ClassDiagram.png}
 	\caption{Notification Class Diagram}
 \end{figure}
 
 
-\subsection{Activity Diagram}
-
+\subsubsection{Activity Diagram}
+This diagram models workflow activities and exhibits sequencing, exclusion, synchronizaion and concurrency.
 \begin{figure}[H]
 	\centering
-	\includegraphics[width=\textwidth]{notification/img/}
+	\includegraphics[scale=0.8]{notification/img/activityDiagram.png}
 	\caption{Notification Activity Diagram}
 \end{figure}
 
 
-\subsection{Sequence Diagram}
+\subsubsection{Sequence Diagram}
 
 \begin{figure}[H]
 	\centering
-	\includegraphics[width=0.7\textwidth]{notification/img/SequenceDiagram.png}
+	\includegraphics[scale=0.4]{notification/img/SequenceDiagram.png}
 	\caption{Notification Sequence}
 \end{figure}
 
 
 
-\subsection{State Diagram}
+\subsubsection{State Diagram}
 
 \begin{figure}[H]
 	\centering
@@ -98,7 +105,7 @@ All notifications that have been sent by any means, by email, SMS, or even push 
 
 
 
-\subsection{Use Case Diagram}
+\subsubsection{Use Case Diagram}
 
 \begin{figure}[H]
 	\centering
