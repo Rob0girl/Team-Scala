@@ -46,4 +46,13 @@ The notifications must be:
 
 
 \subsection{Software System Attributes}
+\subsubsection{Reliability}
+The system should make use of a queue to send notifications, so that no messages can get lost on the way and must guarantee that the notification must be delivered.
+Notifications should be authentic and be able to verify that delivery of the notification.
+
+\subsubsection{Security}
+The sending of the notifications must be secure using proper SMTP setup with SSL encryption for emails, and a authentic SMS provider validated by the WASPA, and a secure means of push notifications using IONIC App that allows secure remote push notifications to all user devices that contain the app.
+
+\subsubsection{Auditability}
+All notifications that have been sent by any means, by email, SMS, or even push notifications should be logged on the back-end server.
 
