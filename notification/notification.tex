@@ -65,6 +65,7 @@ The Notification Subsystem is designed using 2 design patterns:
 	\item \textbf{Strategy - } This pattern encapsulates the send() function within the Notification class, making it interchangeable. This allows the send() function to vary based on whether the notification is an email notification, SMS notification or a push notification.	
 	\item \textbf{Observer - } This pattern defines a one-to-many relationship between the Notifier and User classes so that when the Notifier's state changes, all users are notified automatically.
 \end{enumerate}
+\newpage
 \subsubsection{Class Diagram}
 This diagram models the structural elements, their composition and classification.
 
@@ -74,31 +75,30 @@ This diagram models the structural elements, their composition and classificatio
 	\caption{Notification Class Diagram}
 \end{figure}
 
-
+\newpage
 \subsubsection{Activity Diagram}
 This diagram models workflow activities and exhibits sequencing, exclusion, synchronizaion and concurrency.
 \begin{figure}[H]
 	\centering
-	\includegraphics[scale=0.8]{notification/img/activityDiagram.png}
+	\includegraphics[scale=0.5]{notification/img/activityDiagram.png}
 	\caption{Notification Activity Diagram}
 \end{figure}
 
 
 \subsubsection{Sequence Diagram}
-
+This diagram models time-ordered interaction behaviour between the objects within this subsystem.
 \begin{figure}[H]
 	\centering
 	\includegraphics[scale=0.4]{notification/img/SequenceDiagram.png}
 	\caption{Notification Sequence}
 \end{figure}
 
-
-
+\newpage
 \subsubsection{State Diagram}
-
+This diagram models state dependant behaviour of an object.
 \begin{figure}[H]
 	\centering
-	\includegraphics[width=\textwidth]{notification/img/NotificationState.jpg}
+	\includegraphics[scale=0.5]{notification/img/stateDiagram.png}
 	\caption{Notification State Diagram}
 \end{figure}
 
@@ -106,7 +106,7 @@ This diagram models workflow activities and exhibits sequencing, exclusion, sync
 
 
 \subsubsection{Use Case Diagram}
-
+This is a refined version of the use case diagram given in the Requirements Specification. It shows the functions of the subsystem as well as relationships of external entities or actors.
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=0.7\textwidth]{notification/img/NotificationUseCase.jpg}
