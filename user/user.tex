@@ -9,18 +9,20 @@ This section gives a detailed description of the system interfaces, hardware int
 
 	\subsubsection{System Interfaces}
 		\begin{itemize}
-			\item The user module will interface with any subsystem or module that wishes to access the data or               functions.  
-		  \item 
+			\item The user module will interface with any subsystem or module that wishes to access the data or               functions. For example, the notification module interface with the Users module to send notifications to users when there are new events and updates on the system.
+		
 		\end{itemize}
 	\subsubsection{User Interfaces }
 	\begin{itemize}
-	\item The basic function of the user interface is to enable users to interact with the system.All the functions necessary to use the NavUP application are perfomed through the user interface. The user interface allows the user to login or register if they are first time users. The user interface also allows the user to recieve notifications about various activities or events happening around campus. 
+	\item The basic function of the user interface is to enable users to interact with the system.All the functions necessary to use the NavUP application are perfomed through the user interface. The user interface allows the user to login or register if they are first time users. 
+\item The user interface also allows the user to recieve notifications about various activities or events happening around campus. 
 
 	\end{itemize}
  
 	\subsubsection{Hardware Interfaces }
 	\begin{itemize}
-	\item The will be a hardware interface with routers across campus in order to triangulate the position of the user on campus and this will require the hardware interface to interact with the Users module of the system. The hardware interface also includes devices that users use to access the NavUP application 
+	\item The will be a hardware interface with routers across campus in order to triangulate the position of the user on campus and this will require the hardware interface to interact with the Users module of the system. 
+	\item The hardware interface also includes devices that users use to access the NavUP application 
 	\end{itemize}
 	\subsubsection{Software Interfaces } %
 	
@@ -30,6 +32,15 @@ This section gives a detailed description of the system interfaces, hardware int
 
 
 \subsection{Design Constraints}
+\begin{itemize}
+
+\item The speed at which NavUP can perform is constrained by the processing power and the  memory that is available on the device on which it runs.
+
+\item The accuracy of the results profuced by functions such as determining the user's location, which are done by the GIS module through the Users module are constrained by the strength of the WIFI connection on campus.
+
+\item This system’s ability to give updates and events to users through the Users module is constrained by the external management and maintenance which is performed by the administrator of the system.
+
+\end{itemize}
 
 
 
