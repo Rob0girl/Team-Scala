@@ -40,6 +40,16 @@ User module should be able to perform under high CRUD operations,and have optimi
 
 
 \subsection{Software System Attributes} %
+\subsubsection{Availability}
+The user module should always be active since the majority of the application deals with the user module so having no down-time will be beneficial and required for the system to prevent crashes,
+\subsubsection{Reliability}
+The user module should make use of queuing for CRUD database operations, which most databases have and should be reliable since the database should be ACID compliant.
+
+\subsubsection{Security}
+Data within the user module should not have external classes accessing the information without being authenticated, user passwords and usernames should not be able to be accessed outside the scope of this module. Passwords should be encrypted using a strong encryption algorithm such as SHA-512 and should also support end-to-end encryption to guarantee more safer data transfer. The REST API should not be overexposed and have the necessary security implementations such as public/private key encryption, and should only accept authentic connections and prevent against DDOS.
+
+\subsubsection{Auditability}
+All CRUD operations within the user module should be logged for security and data integrity purposes.
 
 \subsection{UML}
 \subsubsection{Class Diagram}
