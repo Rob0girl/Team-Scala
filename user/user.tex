@@ -59,9 +59,11 @@ The user module should make use of queuing for CRUD database operations, which m
 Data within the user module should not have external classes accessing the information without being authenticated, user passwords and usernames should not be able to be accessed outside the scope of this module. Passwords should be encrypted using a strong encryption algorithm such as SHA-512 and should also support end-to-end encryption to guarantee more safer data transfer. The REST API should not be overexposed and have the necessary security implementations such as public/private key encryption, and should only accept authentic connections and prevent against DDOS.
 
 \subsubsection{Auditability}
-All CRUD operations within the user module should be logged for security and data integrity purposes.
+All CRUD operations within the user module should be logged for security and data integrity purposes.\\
+All login attempts should also then be logged and notify an administrator if too many attempts to login was unsuccessful to ensure system security, since this could be proof for an audit trail.
 
-\subsection{UML Diagrams}
+\pagebreak
+\subsection{UML}
 \subsubsection{Class Diagram}
 The class diagram of the user sub-system makes use of the template method design pattern so that if need be one can easily construct different types of users with minimal code modifications.
 
@@ -82,7 +84,9 @@ The class diagram of the user sub-system makes use of the template method design
 %\end{figure}
 %
 %
+\pagebreak
 \subsubsection{Activity Diagram}
+This diagram models work-flow activities of what users can do in the user module.
 
 \begin{figure}[H]
 		\centering
@@ -102,7 +106,7 @@ This diagram models time-ordered interaction behaviour between a user logging in
 
 
 \subsubsection{State Diagram}
-
+This diagram models state dependant behaviour of user login and user functionality.
 \begin{figure}[H]
 		\centering
 		\includegraphics[width=\textwidth]{user/img/UserStateDiagram.jpg}
