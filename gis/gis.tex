@@ -3,3 +3,31 @@
 \subsection{Overview}
 The GIS module provides services to gather, maintain, persist and provide information related to the world serviced by the system. It is about the creation and maintenance of a GIS Map of the
 campus by using WiFi signal strengths and other available sources of GIS information. In addition it provides services to search for locations such as landmarks, buildings as well as venues such as offices, lecture halls and labs.
+
+\subsection{External Interface Requirements}
+This section gives a detailed description of the System Interfaces, hardware interfaces, software interfaces, communication interfaces and user interfaces.
+\subsubsection{System Interfaces}
+\begin{itemize}
+\item The GIS module will interface with all subsystems or modules that work with location based data.
+
+\item The GIS module will interface with the Navigation module in order to send and receive navigation information. The navigation module will send requests to the GIS module, these requests will include location information. The GIS module will use the location information to build map objects and the mapping unit in the GIS subsystem will plot the map objects on a map which is sent back to the Navigation module for use by the user.
+
+\item The GIS module will interface with the Points of Interest module to create special gis objects like heritage sites and historic landmarks in the mapping subsystem of the GIS module
+
+\end{itemize}
+
+
+\subsubsection{User Interfaces}
+The GIS subsystem will not directly interface with the user. All GIS related content will be shown to the user via the navigation subsystem.
+
+\subsubsection{Hardware Interfaces}
+The GIS module receives all its information from the navigation subsystem, thus it does not have any specific hardware interfaces.
+\subsubsection{Software Interfaces}
+\begin{itemize}
+\item The GIS module will interface with the database in order to persist gis objects and retrieve location information needed to create gis objects.
+
+\item The GIS module will use position tracking gps software such as \textbf{Position Logic} to track user movements and map the areas around them.
+\end{itemize}
+
+\subsubsection{Communication Interfaces}
+The GIS subsystem does not communicate directly with the user, and it does not send out any notifications. Thus the GIS module has no communication interfaces.
