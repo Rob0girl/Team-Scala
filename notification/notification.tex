@@ -58,6 +58,10 @@ The sending of the notifications must be secure using proper SMTP setup with SSL
 \subsubsection{Auditability}
 All notifications that have been sent by any means, by email, SMS, or even push notifications should be logged on the back-end server.
 
+\subsubsection{Availability}
+The notifications module should be available throughout the entire execution of the system since it needs to provide real-time notifications to the user, of events etc. nearby. This becomes vital for the module to be optimised and have good communications network to account for the minimal possible network delay to make meet the real-time expectations.
+
+
 
 \subsection{Design}
 The Notification Subsystem is designed using 2 design patterns:
