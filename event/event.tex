@@ -24,12 +24,12 @@ This section gives a detailed description of the system interfaces, hardware int
 
 	\subsubsection{Software Interfaces } 
 	The event module will communicate with the database in order to get the details of events, and also for saving and editing new Events etc. All the I/O interaction with the database.
+	
 	\subsubsection{Communication Interfaces } 
-
-	\item The Event module will need to comunicate with Notification to notify Users.
-	\item needs to comunicate with Users as only registered user can see Events.
-
-
+		\begin{itemize}
+		\item The Event module will need to comunicate with Notification to notify Users.
+		\item needs to comunicate with Users as only registered user can see Events.
+		\end{itemize}
 
 	
 \subsection{Performance Requirements}
@@ -65,7 +65,7 @@ The class diagram of the Events sub-system makes use of the template method desi
 
 \begin{figure}[H]
 	\centering
-	\includegraphics[width=0.7\textwidth]{event/ClassDiagram(NoMethods).PNG}
+	\includegraphics[width=0.7\textwidth]{event/ClassDiagrams(NoMethods).PNG}
 	\caption{Event Class Diagram}
 \end{figure}
 
